@@ -1,0 +1,20 @@
+
+<div class="row d-flex justify-content-center">
+  <!-- ngFor -->
+   <div *ngFor="let hero of heroesArray" class="card hero-card m-4">
+     <div class="d-flex justify-content-center">
+      <img class="card-img-top rounded-circle img-background align-items-center" alt="Card image cap" [src]="heroAvatar+hero.image">
+     </div>
+     <div class="card-body">
+      <h5 class="card-title">{{hero.superHeroName}}</h5>
+       <p class="hero-name">First Name: blabla</p>
+       <p class="hero-name">Last Name: blablabla</p>
+       <hr>
+       <p class="card-text">Description: This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     </div>
+     <div class="card-footer">
+       <a class="btn btn-primary m-2">Update</a>
+       <button class="btn btn-danger m-2">Delete</button>
+     </div>
+   </div>
+ </div>
